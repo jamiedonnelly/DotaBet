@@ -17,7 +17,8 @@ from modules.reactions import good_react, bad_react
 
 ### Set backends and setup logging ###
 plt.switch_backend('agg')
-logging.basicConfig(filename='gambling.log',level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
+    datefmt='%Y-%m-%d:%H:%M:%S',filename='gambling.log',level=logging.ERROR)
 logger = logging.getLogger(__name__)
 ###
 
@@ -208,7 +209,7 @@ class Gambling(commands.Cog):
                 return
         except Exception as e:
             print(e)
-            logging.error(e)
+            logger.error(e)
             self.refund(bettor_id,bet)
             await ctx.message.add_reaction("❌")
                     
