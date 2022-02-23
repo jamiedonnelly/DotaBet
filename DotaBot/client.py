@@ -8,7 +8,7 @@ import logging
 #####
 
 
-logging.basicConfig(filename="client.log",level=logging.DEBUG)
+logging.basicConfig(filename="client.log",level=logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 invite_link = "https://discord.com/api/oauth2/authorize?client_id=939836345839403018&permissions=534723950656&scope=bot"
