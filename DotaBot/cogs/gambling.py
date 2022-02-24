@@ -221,7 +221,7 @@ class Gambling(commands.Cog):
         await ctx.channel.send(embed=embed)
         
     @commands.command()
-    @commands.cooldown(1, 60*60*24*3, commands.BucketType.user)
+    @commands.cooldown(1, 60*60*24, commands.BucketType.user)
     async def refresh(self,ctx):
         self.balance.reset_balance(ctx.author.id)
         balance = self.balance.get_balance(ctx.author.id)
