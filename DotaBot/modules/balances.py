@@ -197,13 +197,14 @@ class UserInfo():
 
 if __name__=="__main__":
     
-    host = ''
-    user = ''
-    database = ''
+    host = 'opendota2.cjyrbyn2cr6t.eu-west-2.rds.amazonaws.com'
+    user = 'jamie'
+    database = 'opendota'
     password=''
     
     bal = Balances(host,user,database,password)
     
+    bal.new_user(11)
 
         
     

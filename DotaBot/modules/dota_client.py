@@ -60,9 +60,9 @@ class DotaClient():
                 slot = data['players'][i]['player_slot']
                 break
         if (0<=slot<=127):
-            return 1
+            return int(1)
         else:
-            return -1
+            return int(-1)
     
     def latest_match_id(self, player_id):
         matches = self.get_matches_by_player(player_id)
