@@ -1,6 +1,6 @@
 # DotaBet - Interactive discord bot allowing people to bet on their friends' Dota2 matches 
 
-# _Currently not available for open-access due to costs and scalability issues which will be resolved.
+# _Currently not available for open-access due to costs and scalability issues which will be resolved._
 
 The bot was inspired by the habit of me and my friends to watch each other play Dota2 in discord through discord's streaming functionality. When watching these games we always wanted the ability to predict the outcome, or bet on if we believed our friends were going to win and lose the game. Using a virtual currency and DotaBet this can now happen. 
 
